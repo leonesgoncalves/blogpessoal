@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="imgs/favicon.ico"/>
+      <title>Site Do Leones</title>
+    </head>
+
+    <body>
+ <!--JavaScript at end of body for optimized loading-->
+ <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+<!--Menu de navegação-->
+<div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper  teal">
+            
+          <a href="index.html" class="brand-logo"> &nbsp; LEONES</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+          
+          
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+          
+
+        </div>
+      </nav>
+</div>
+<ul id="slide-out" class="sidenav">
+            
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="posts.html">Posts</a></li>
+    <li><a href="produtos.html">Produtos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+
+  </ul>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);
+      });
+    
+      // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+      // var collapsibleElem = document.querySelector('.collapsible');
+      // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+    
+      // Or with jQuery
+    
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+            
+    
+              </script>
+
+
+      <div class="container">
+         <!--Boas Vindas-->
+         <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row valign-wrapper">
+                <div class="col s2">
+                  <img src="imgs/foto.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    Olá, tudo bem? Meu nome é Leones Gonçalves, tenho 20
+                     anos de idade, e sou um entusiasta de marketing 
+                     digital, no tempo livre estudo programação e 
+                     finanças, e aqui é onde eu junto as minhas anotações,
+                      projetos e pesquisas. 
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!--Final das boas vindas-->
+         
+         <blockquote>
+            Escolha abaixo o que mais te interessa no momento sobre mim.
+          </blockquote>
+        
+         <!--Area de posts-->
+         <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="imgs/img-nav/posts.jpg">
+                  <span class="card-title">Área De Posts</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light  teal"><i class="material-icons">lightbulb_outline</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Descobri recentemente que quando ensinamos algo, fixamos melhor esse conhecimento, e é por isso que periodicamente posto aqui na area de posts sobre minhas descoertas e experiencias.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+        <!--Area de Produtos-->        
+        
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="imgs/img-nav/projetos.jpg">
+                  <span class="card-title">Meus Projetos</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light  teal"><i class="material-icons">shop</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Aqui nessa area eu vou disponibilizar uma porta de entrada para todos os meus produtos e serviços para você que gosta do meu traalho e quer soluções de alto nivel.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--Area De Contatos-->
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="imgs/img-nav/contato.jpg">
+                  <span class="card-title">Falar Comigo</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light  teal"><i class="material-icons">sms</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Em algum momento voce pode sentir a necessidade de entrar em contato comigo, seja para tirar um duvida, dar uma sujestão ou até mesmo para sujerir uma parceria.</p>
+                </div>
+              </div>
+            </div>
+          
+        <!--Area de historia-->
+        
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="imgs/img-nav/historia.jpg">
+                  <span class="card-title">Minha Historia</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light  teal"><i class="material-icons">person</i></a>
+                </div>
+                <div class="card-content">
+                  <p>Comecei minha jornada muito cedo, então tenho bastante coisa para contar para que você conheça um pouco de quem escreve para você.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+                                    
+         <!--Fim dos 10 Artigos-->
+
+         <footer>
+            
+            
+            
+              <div class="container center-align">
+              © 2021 Leones Gonçalves | Direitos Reservados
+              
+              </div>
+
+        
+          </footer>
+     
+
+
+
+       
+
+        
+
+    </body>
+  </html>
+        
