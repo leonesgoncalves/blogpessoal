@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 15px 10px;
+
+}
+header a, footer a, footer p {
+    text-decoration: none;
+    color: white;
+}
+header a:hover, footer a:hover {
+    color: green;
+}
+main {
+    margin: 0 25% 0 25%;
+}
+main p {
+    text-align: justify;
+}
+.post {
+    padding: 5px;
+    border-radius: 8px;
+}
+.post:hover {
+    background-color: rgb(248, 248, 248);
+}
+.infopost a {
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0 5px 0  5px;
+}
+.infopost span {
+    color: grey;
+}
+.post p a {
+    color: green;
+}
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+}
+.h1pagina {
+    text-align: center;
+}
+@media (max-width: 800px){
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 5px;
+        background-color: rgb(201, 201, 201);
+    }
+    header a {
+        font-size: 5vw;
+        color: black;
+        padding: 15px 5px;
+        
+    }
+    .logo {
+        color: white;
+        background-color: black;
+        padding: 15px 5px;
+        width: 100%;
+        text-align: center;        
+    }
+    main {
+        margin: 0 6px 0 6px;
+    }
+    .infopost a, .infopost span {
+        font-size: 5vw;
+    }
+    main h2{
+        font-size: 7vw;
+    }
+    main p{
+        font-size: 5vw;
+    }
+    footer {
+        display: none;
+    }
+}
