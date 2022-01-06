@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 header {
     background-color: black;
@@ -44,7 +47,7 @@ main p {
 }
 .sessao {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(1fr 1fr 1fr);
     gap: 5px;
 }
 .sessao div {
@@ -52,6 +55,7 @@ main p {
     border-radius: 8px;
     padding: 5px;
 }
+
 .sessao div a {
     color: green;
     text-decoration: none;
@@ -61,10 +65,8 @@ main p {
 }
 footer {
     background-color: black;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
 .h1pagina {
     text-align: center;
