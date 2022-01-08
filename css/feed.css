@@ -5,20 +5,66 @@ body {
     height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+iframe {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+/*
 header {
+    width: 1fr;
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 15px 10px 15px 10px;
 
 }
-header a, footer a, footer p {
+header a, footer a, footer p, header li{
     text-decoration: none;
     color: white;
+    list-style: none;
+}
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 6px;
+}
+.menu li {
+    position: relative;
+}
+.menu li ul {
+    position: absolute;
+    background-color: white;
+    display: none;
+    padding: 0;
+}
+.menu li ul li {
+    border:2px solid black;
+    border-top: 0;
+    padding:5px;
+}
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+.menu ul li a {
+    color: black;
+}
+.menu ul li a:hover, .menu ul li a.over {
+    color: green;
 }
 header a:hover, footer a:hover {
     color: green;
 }
+
+*/
 main {
     margin: 0 25% 0 25%;
 }
@@ -72,8 +118,9 @@ main p {
 }
 footer {
     background-color: black;
-    width: 100%;
+    width: 1fr;
     text-align: center;
+    padding: 15px 10px 15px 10px;
 }
 .h1pagina {
     text-align: center;
@@ -92,12 +139,19 @@ footer {
         padding: 15px 5px;
         
     }
+    header .menu {
+        padding: 15px;
+    }
     .logo {
         color: white;
         background-color: black;
         padding: 15px 5px;
         width: 100%;
         text-align: center;        
+    }
+    .menu li ul li {
+        display: flex;
+        font-size: 25px;
     }
     main {
         margin: 0 15px 0 15px;

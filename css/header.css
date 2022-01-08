@@ -1,0 +1,50 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 15px 10px;
+
+}
+header a, footer a, footer p, header li{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 6px;
+}
+.menu li {
+    position: relative;
+}
+.menu li ul {
+    position: absolute;
+    background-color: white;
+    display: none;
+    padding: 0;
+}
+.menu li ul li {
+    border:2px solid black;
+    border-top: 0;
+    padding:5px;
+}
+.menu li:hover ul, .menu li.over ul{
+    display: block;
+}
+.menu ul li a {
+    color: black;
+}
+.menu ul li a:hover, .menu ul li a.over {
+    color: green;
+}
+header a:hover, footer a:hover {
+    color: green;
+}
